@@ -13,4 +13,3 @@ WHERE StudentID = 2;
 UPDATE Student
 SET Department = 'Mechanical'
 WHERE StudentID = 3;
-
