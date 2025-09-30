@@ -31,3 +31,29 @@ SELECT * FROM employee WHERE emp_city IN ('Allahabad', 'Patna');
 
 --  NOT Operator
 SELECT * FROM employee WHERE emp_city NOT LIKE 'A%';
+
+-- OR Operator
+SELECT * FROM employee WHERE emp_city = 'Varanasi' OR emp_country = 'India';
+
+-- LIKE Operator
+SELECT * FROM employee WHERE emp_city LIKE 'P%';
+
+-- BETWEEN Operator
+SELECT * FROM employee WHERE emp_id BETWEEN 101 AND 104;
+
+-- ALL Operator
+SELECT * FROM employee WHERE emp_id = ALL 
+              (SELECT emp_id FROM employee WHERE emp_city = 'Varanasi');
+              
+--  ANY Operator
+SELECT * FROM employee WHERE emp_id = ANY
+                (SELECT emp_id FROM employee WHERE emp_city = 'Varanasi');
+
+-- EXISTS Operator
+SELECT emp_name FROM employee WHERE EXISTS
+                (SELECT emp_id FROM employee WHERE emp_city = 'Patna');
+
+-- SOME Operator
+SELECT * FROM employee WHERE emp_id < SOME 
+                (SELECT emp_id FROM employee WHERE emp_city = 'Patna');
+                
