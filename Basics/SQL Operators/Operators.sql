@@ -19,3 +19,22 @@ INSERT INTO MATHS (id, name, marks) VALUES
 (10, 'KRITI', 60);
 
 SELECT * FROM MATHS;
+
+-- Equal to (=) Operator:
+SELECT * FROM MATHS WHERE MARKS=50;
+
+-- Greater than (>) Operator:
+SELECT * FROM MATHS WHERE MARKS>60;
+
+-- Less than (<) Operator:
+SELECT * FROM MATHS WHERE MARKS<40;
+
+-- Greater than or equal to (>=) Operator:
+SELECT * FROM MATHS WHERE MARKS>=80;
+
+-- Less than or equal to (<=) Operator
+SELECT * FROM MATHS WHERE MARKS<=30;
+
+-- Not equal to (<>) Operator:
+SELECT * FROM MATHS WHERE MARKS<>70;
+
