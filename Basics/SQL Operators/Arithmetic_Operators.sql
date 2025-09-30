@@ -56,6 +56,7 @@ FROM addition;
 -- for example
 -- Arithmetic Operations with NULL : important note
 -- When any arithmetic operation is performed on a NULL value, the result is always NULL.
+-- for example in table : type = NULL 
 SELECT employee_id, employee_name, salary, type, 
        type + 100 AS "type + 100"
 FROM addition;
