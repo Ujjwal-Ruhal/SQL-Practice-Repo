@@ -26,3 +26,8 @@ INSERT INTO employee (emp_id, emp_name, emp_city, emp_country) VALUES
 -- AND Operator
 SELECT * FROM employee WHERE emp_city = 'Allahabad' AND emp_country = 'India';
 
+-- IN Operator
+SELECT * FROM employee WHERE emp_city IN ('Allahabad', 'Patna');
+
+--  NOT Operator
+SELECT * FROM employee WHERE emp_city NOT LIKE 'A%';
