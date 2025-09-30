@@ -25,3 +25,43 @@ SELECT employee_id, employee_name, salary,
        salary + employee_id AS "salary + employee_id"
 FROM addition;
 
+-- Subtraction (-)
+SELECT employee_id, employee_name, salary, 
+       salary - 100 AS "salary - 100"
+FROM subtraction;
+-- or
+SELECT employee_id, employee_name, salary, 
+       salary - employee_id AS "salary - employee_id"
+FROM subtraction;
+
+-- Multiplication (*)'
+SELECT employee_id, employee_name, salary, 
+       salary * 100 AS "salary * 100"
+FROM addition;
+-- or
+SELECT employee_id, employee_name, salary, 
+       salary * employee_id AS "salary * employee_id"
+FROM addition;
+
+-- Division (/)
+SELECT employee_id, employee_name, salary, 
+       salary / 100 AS "salary / 100"
+FROM addition;
+
+-- Modulus (%)
+SELECT employee_id, employee_name, salary, 
+       salary % 25000 AS "salary % 25000"
+FROM addition;
+
+-- for example
+-- Arithmetic Operations with NULL : important note
+-- When any arithmetic operation is performed on a NULL value, the result is always NULL.
+SELECT employee_id, employee_name, salary, type, 
+       type + 100 AS "type + 100"
+FROM addition;
+
+/*
+- NULL means unknown/unavailable
+- It is not the same as 0 or empty string
+- Any operation with NULL results in NULL
+*/
