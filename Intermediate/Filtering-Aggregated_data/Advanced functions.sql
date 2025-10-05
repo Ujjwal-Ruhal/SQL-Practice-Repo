@@ -72,3 +72,14 @@ SELECT LAST_INSERT_ID();
 -- NULLIF() : Returns NULL if equal
 SELECT NULLIF(115, 115);
 
+-- SESSION_USER() : Returns the user name and host name for the current MySQL user
+SELECT SESSION_USER();
+
+-- SYSTEM_USER() : Returns the user name and host name for the current MySQL user.
+SELECT SYSTEM_USER();
+
+-- USER() : It returns the user name and host name for the current MySQL user
+SELECT USER();
+
+-- VERSION() : It returns the version of the MySQL database
+SELECT VERSION();
