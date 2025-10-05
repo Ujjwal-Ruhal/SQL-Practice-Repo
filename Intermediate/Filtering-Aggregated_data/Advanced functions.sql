@@ -65,3 +65,10 @@ SELECT DATABASE();
 
 -- IF() : Returns one value if a condition is TRUE, or another value if a condition is FALSE
 SELECT IF(200<500, "YES", "NO");
+
+-- LAST_INSERT_ID() : Returns the first AUTO_INCREMENT value that was set by the most recent INSERT or UPDATE statement
+SELECT LAST_INSERT_ID();
+
+-- NULLIF() : Returns NULL if equal
+SELECT NULLIF(115, 115);
+
