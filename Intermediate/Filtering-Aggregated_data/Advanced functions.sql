@@ -54,3 +54,8 @@ SELECT BINARY "HelloUjjwal";
 -- COALESCE() : Returns the first non-null expression in a list
 SELECT COALESCE(NULL,NULL,'hello',NULL,'hi');
 
+-- CONNECTION_ID() : Returns the unique connection ID for the current connection
+SELECT CONNECTION_ID();
+
+-- CURRENT_USER() : Returns the user name and hostname for the MySQL account used by the server.
+SELECT CURRENT_USER();
