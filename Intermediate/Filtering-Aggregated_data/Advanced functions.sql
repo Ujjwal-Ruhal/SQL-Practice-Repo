@@ -59,3 +59,9 @@ SELECT CONNECTION_ID();
 
 -- CURRENT_USER() : Returns the user name and hostname for the MySQL account used by the server.
 SELECT CURRENT_USER();
+
+-- DATABASE() : Returns the name of the default database.
+SELECT DATABASE();
+
+-- IF() : Returns one value if a condition is TRUE, or another value if a condition is FALSE
+SELECT IF(200<500, "YES", "NO");
