@@ -5,3 +5,14 @@ We have a table GFGemployees with employee_id, employee_name and manager_id. Eac
 Here is the query to create the table and insert sample data:
 */
 
+CREATE TABLE GFGemployees (
+    employee_id INT PRIMARY KEY, 
+    employee_name VARCHAR(50), 
+    manager_id INT );
+
+INSERT INTO GFGemployees (employee_id, employee_name, manager_id)
+VALUES  (1, 'Zaid', 3),  
+               (2, 'Rahul', 3),  
+               (3, 'Raman', 4),  
+               (4, 'Kamran', NULL),  
+               (5, 'Farhan', 4);
