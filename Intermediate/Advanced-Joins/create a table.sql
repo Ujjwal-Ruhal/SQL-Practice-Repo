@@ -22,3 +22,8 @@ To retrieve the list of employees with their corresponding managers, we perform 
 
 By joining manager_id from the employee side with employee_id from the manager side, we establish the relationship between employees and their managers.
 */
+SELECT e.employee_name AS employee, m.employee_name AS manager
+FROM GFGemployees AS e 
+JOIN GFGemployees AS m ON e.manager_id = m.employee_id;
+
+-- Employees with a valid manager_id are shown. Kamran (who has no manager, NULL) is not listed as an employee, but appears as a manager.
