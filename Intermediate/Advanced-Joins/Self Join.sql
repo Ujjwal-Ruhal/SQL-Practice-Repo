@@ -12,3 +12,9 @@ FROM table AS alias1
 JOIN table AS alias2 
 ON alias1.column = alias2.related_column;
 */
+/*
+columns: Columns to retrieve in the result.
+alias1: First reference (alias) of the table.
+alias2: Second reference (alias) of the same table.
+related_column: condition that links rows within same table (e.g., Employee.ManagerID = Manager.EmployeeID).
+*/
