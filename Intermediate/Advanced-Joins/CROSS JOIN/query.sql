@@ -8,3 +8,8 @@ In general, if table A has m rows and table B has n rows, CROSS JOIN result will
 SELECT * 
 FROM Customer
 CROSS JOIN Orders;
+
+/*
+Explanation: CROSS JOIN combines every row from the Customer table with every row from Orders table. 
+Since there are 2 customers and 2 orders, result contains 2 × 2 = 4 rows.
+*/
