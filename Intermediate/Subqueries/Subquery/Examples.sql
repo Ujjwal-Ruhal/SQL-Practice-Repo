@@ -17,3 +17,21 @@ The subquery SELECT ROLL_NO FROM New_Student WHERE SECTION = 'A' finds roll numb
 The outer query then uses these roll numbers to fetch details from the Student table.
 Thus, only Ravi and Raj are returned, since they are in section A.
 */
+
+/*
+Example 2: Using Subquery with INSERT
+
+Here we demonstrate how a subquery can be used with INSERT. Instead of manually entering data, we copy data from another table (Temp_Students) into the main Student table.
+*/
+-- Temp_Students
+
+INSERT INTO Student 
+SELECT * FROM Temp_Students;
+
+/*
+Explanation:
+
+The subquery SELECT * FROM Temp_Students selects all rows from the helper table.
+The INSERT INTO Student adds these rows into the main Student table.
+Thus, Ajay and Meena are successfully added.
+*/
