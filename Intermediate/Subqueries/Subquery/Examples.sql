@@ -35,3 +35,22 @@ The subquery SELECT * FROM Temp_Students selects all rows from the helper table.
 The INSERT INTO Student adds these rows into the main Student table.
 Thus, Ajay and Meena are successfully added.
 */
+
+/*
+Example 3: Using Subquery with DELETE
+
+In this example, we use a subquery with DELETE to remove certain rows from the Student table. Instead of hardcoding roll numbers, the subquery finds them based on conditions.
+*/
+
+DELETE FROM Student
+WHERE ROLL_NO IN (
+    SELECT ROLL_NO FROM Student WHERE ROLL_NO <= 101 OR ROLL_NO = 201
+);
+
+/*
+Explanation:
+
+The subquery selects roll numbers 101 and 201.
+The outer query deletes students having those roll numbers.
+As a result, Ram (101) and Ajay (201) are removed.
+*/
