@@ -34,3 +34,4 @@ WHERE e.Salary > (SELECT AVG(Salary)
                   WHERE DepartmentID = e.DepartmentID);
 
 -- Output: Returns employees earning more than the average salary of their own department.
+
