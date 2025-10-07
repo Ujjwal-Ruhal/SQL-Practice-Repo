@@ -1,0 +1,5 @@
+CREATE TABLE New_Student (
+    NAME VARCHAR(50),
+    ROLL_NO INT,
+    SECTION CHAR(1)
+);
