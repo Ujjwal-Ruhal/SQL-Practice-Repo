@@ -6,4 +6,13 @@ Executes once for each row of the outer query.
 Subquery uses values from the outer query.
 Ideal for ranking, row-specific calculations, and conditional logic
 */
+/*
+-- Syntax:
 
+SELECT column1, column2, ...
+FROM table1 outer
+WHERE column1 operator
+      (SELECT column
+       FROM table2
+       WHERE expr1 = outer.expr2);
+*/
