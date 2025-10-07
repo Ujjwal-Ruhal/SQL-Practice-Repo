@@ -54,3 +54,24 @@ The subquery selects roll numbers 101 and 201.
 The outer query deletes students having those roll numbers.
 As a result, Ram (101) and Ajay (201) are removed.
 */
+
+/*
+Example 4: Using Subquery with UPDATE
+
+Subqueries can also be used with UPDATE. In this example, we update student names to "Geeks" if their location matches the result of a subquery.
+*/
+
+UPDATE Student
+SET NAME = 'Ujjwal'
+WHERE LOCATION IN (
+    SELECT LOCATION FROM Student WHERE LOCATION IN ('Salem', 'Delhi')
+);
+
+/*
+Explanation:
+
+The subquery selects locations 'Salem' and 'Delhi'.
+The outer query updates the NAME field for students whose location matches those values.
+Thus, Ravi and Meena are renamed to "Ujjwal".
+*/
+
