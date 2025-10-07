@@ -75,3 +75,41 @@ The outer query updates the NAME field for students whose location matches those
 Thus, Ravi and Meena are renamed to "Ujjwal".
 */
 
+/*
+Example 5: Simple Subquery in the FROM Clause
+
+This example demonstrates using a subquery inside the FROM clause, where the subquery acts as a temporary (derived) table.
+*/
+
+SELECT NAME, PHONE_NUMBER
+FROM (
+    SELECT NAME, PHONE_NUMBER, LOCATION 
+    FROM Student 
+    WHERE LOCATION LIKE 'C%'
+) AS subquery_table;
+
+/*
+Explanation:
+
+The subquery (SELECT NAME, PHONE_NUMBER, LOCATION FROM Student WHERE LOCATION LIKE 'C%') fetches students whose location starts with "C" (Coimbatore, Chennai, etc.).
+The outer query then selects only NAME and PHONE_NUMBER from this derived table.
+Only Raj qualifies because his location is Coimbatore.
+*/
+
+/*
+Example 6: Subquery with JOIN
+
+We can also use subqueries along with JOIN to connect data across tables.
+*/
+
+SELECT s.NAME, s.LOCATION, ns.SECTION
+FROM Student s
+INNER JOIN (
+    SELECT ROLL_NO, SECTION 
+    FROM New_Student WHERE SECTION = 'A'
+) ns
+ON s.ROLL_NO = ns.ROLL_NO;
+
+/*
+Explanation: The subquery extracts roll numbers of students in section A. Joining this with the Student table on ROLL_NO returns Ravi and Raj along with their locations and section.
+*/
