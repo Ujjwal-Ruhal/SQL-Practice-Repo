@@ -99,3 +99,10 @@ Independent of the outer query.							Dependent on values from the outer query.
 Usually more efficient for large datasets.				Can be slower as it runs multiple times.
 Example: WHERE col IN (SELECT col FROM table2);			Example: WHERE col > (SELECT AVG(col) FROM table2 WHERE table2.id = outer.id);
 */
+
+/*
+Performance Considerations
+Can be slow on large datasets due to repeated execution.
+Use JOINs when possible for better performance.
+Ensure proper indexes on columns used in filtering.
+*/
