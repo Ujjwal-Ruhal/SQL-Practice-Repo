@@ -19,3 +19,12 @@ FROM table_name
 WHERE column_name expression operator 
    (SELECT column_name FROM table_name WHERE ...);
 */
+/*
+Common SQL Clauses for Subqueries
+Clauses that can be used with subqueries are:
+
+WHERE: filter rows based on subquery results.
+FROM: treat subquery as a temporary (derived) table.
+HAVING: filter aggregated results after grouping.
+*/
+
