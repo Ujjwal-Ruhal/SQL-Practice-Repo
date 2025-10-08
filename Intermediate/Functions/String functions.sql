@@ -17,3 +17,11 @@ Query:
 SELECT CONCAT('John', ' ', 'Doe') AS FullName;
 -- Output: John Doe
 
+-- CHAR_LENGTH() / CHARACTER_LENGTH()
+/*
+The CHAR_LENGTH() or LENGTH() function returns the length of a string in characters. It’s essential for validating or manipulating text data, especially when you need to know how many characters a string contains.
+*/
+
+SELECT CHAR_LENGTH('Hello') AS StringLength;
+-- Output: 5
+
