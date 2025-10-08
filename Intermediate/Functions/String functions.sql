@@ -160,3 +160,13 @@ SELECT INSTR('hello for ujjwal', 'e');
 LCASE()
 The LCASE() function converts all characters in a string to lowercase. It helps standardize text data, especially when comparing strings in a case-insensitive way.
 */
+
+/*
+LOCATE()
+LOCATE() allows you to find the nth occurrence of a substring in a string. This is especially useful when you need to locate a specific substring based on its position.
+
+Syntax:
+*/
+SELECT LOCATE('for', 'helloforujjwal', 1);
+-- Output: 6
+
