@@ -120,3 +120,12 @@ Syntax:
 SELECT ascii('t');
 -- Output: 116
 
+/*
+CONCAT_WS()
+CONCAT_WS() stands for "Concatenate With Separator." It allows us to join multiple strings with a specific separator between them. This is ideal when we need to merge columns like first name and last name with a custom separator.
+
+Syntax:
+*/
+SELECT CONCAT_WS('_', 'hello', 'ujjwal', 'hi');
+-- Output: hello_ujjwal_hi
+
