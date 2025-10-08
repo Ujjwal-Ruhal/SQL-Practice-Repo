@@ -38,3 +38,17 @@ ORDER BY
     default_probability DESC
 FETCH FIRST 5 ROWS ONLY;
 
+/*
+2. Aggregate Function
+Aggregate functions return a single value from a group of rows. Used with SELECT, GROUP BY, HAVING, and ORDER BY, they ignore NULLs (except COUNT(*)). Use NVL to handle NULLs. Nesting is also supported by aggregate functions.
+
+Now let's understand this with the help of example:
+
+*/
+
+SELECT AVG(max_salary)
+FROM (
+    SELECT MAX(salary) AS max_salary
+    FROM employees
+    GROUP BY department_id
+) dept_max_salaries;
