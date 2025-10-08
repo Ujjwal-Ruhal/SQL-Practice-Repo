@@ -215,3 +215,12 @@ Syntax:
 RPAD('hello', 8, '0');
 -- Output: ‘hello000’
 
+/*
+RTRIM()
+RTRIM() removes trailing characters from the right side of a string. By default, it removes spaces, but you can specify other characters as well.
+
+Syntax:
+*/
+RTRIM('helloxyxzyyy', 'xyz');
+-- Output: ‘hello’
+
