@@ -224,3 +224,12 @@ Syntax:
 RTRIM('helloxyxzyyy', 'xyz');
 -- Output: ‘hello’
 
+/*
+SPACE()
+The SPACE() function generates a string consisting of a specified number of spaces. This is useful when you need to format output or create padding in your queries.
+
+Syntax:
+*/
+SELECT SPACE(7);
+-- Output: ‘       ‘
+
