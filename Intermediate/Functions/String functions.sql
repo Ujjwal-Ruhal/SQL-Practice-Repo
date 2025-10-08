@@ -170,3 +170,12 @@ Syntax:
 SELECT LOCATE('for', 'helloforujjwal', 1);
 -- Output: 6
 
+/*
+LPAD()
+LPAD() is used to pad a string to a certain length by adding characters to the left side of the original string. It is useful when you need to format data to a fixed length.
+
+Syntax:
+*/
+SELECT LPAD('hello', 8, '0');
+-- Output: 000hello
+
