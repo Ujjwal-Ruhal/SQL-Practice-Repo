@@ -77,4 +77,30 @@ SELECT
 FROM
   employees;
   
+/*
+In this example:
+
+This query calculates a running average of salaries within each department, ordered by salary.
+It returns the average salary up to the current row without collapsing rows.
+Note: Analytic functions use the analytic_clause, which includes PARTITION BY, ORDER BY, and optional windowing with ROWS or RANGE.
+*/
+
+/*
+4. Model Function
+
+Model functions are used inside the MODEL clause of a SELECT statement to perform spreadsheet-like calculations on rows and columns. They help reference current, previous, or conditional values dynamically during rule evaluation and iteration.
+
+Now we understand this with the help of example:
+*/
+
+SELECT month, sales
+FROM sales_data
+MODEL
+  DIMENSION BY (month)
+  MEASURES (sales)
+  RULES ITERATE(2) (
+    sales['Mar'] = NVL(sales['Mar'], sales['Feb'] * 1.10),
+    sales['Apr'] = NVL(sales['Apr'], sales['Mar'] * 1.10)
+  );
+  
   
