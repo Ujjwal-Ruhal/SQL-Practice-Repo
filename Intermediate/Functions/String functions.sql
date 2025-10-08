@@ -138,3 +138,12 @@ Syntax:
 SELECT FIND_IN_SET('b', 'a, b, c, d, e, f');
 -- Output: 2
 
+/*
+FORMAT()
+The FORMAT() function is used to format a number as a string in a specific way, often with commas for thousands or with a specific number of decimal places. It is handy when you need to display numbers in a user-friendly format.
+
+Syntax:
+*/
+SELECT FORMAT(0.981 * 100, 'N2') + '%' AS PercentageOutput;
+-- Output: ‘98.10%’
+
