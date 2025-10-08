@@ -25,3 +25,17 @@ The CHAR_LENGTH() or LENGTH() function returns the length of a string in charact
 SELECT CHAR_LENGTH('Hello') AS StringLength;
 -- Output: 5
 
+/*
+UPPER() and LOWER()
+These functions convert the text to uppercase or lowercase, respectively. They are useful for normalizing the case of text in a database.
+
+Query:
+*/
+SELECT UPPER('hello') AS UpperCase;
+SELECT LOWER('HELLO') AS LowerCase;
+-- Output:
+/*
+HELLO
+hello
+*/
+
