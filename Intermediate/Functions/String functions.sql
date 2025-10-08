@@ -79,3 +79,12 @@ SELECT RIGHT('Hello World', 5) AS RightString;
 -- Hello    
 -- World
 
+/*
+INSTR()
+The INSTR() function is used to find the position of the first occurrence of a substring within a string. It returns the position (1-based index) of the substring. If the substring is not found, it returns 0. This function is particularly useful for locating specific characters or substrings in text data.
+
+Query:
+*/
+SELECT INSTR('Hello World', 'World') AS SubstringPosition;
+-- Output: 7
+
