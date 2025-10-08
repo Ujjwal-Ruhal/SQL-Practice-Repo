@@ -111,3 +111,12 @@ Other String Functions
 In SQL, beyond the basic string functions, there are several advanced string functions that can help you manipulate and process string data more effectively. These are the some additional SQL Functions.
 */
 
+/*
+ ASCII()
+The ASCII() function returns the ASCII value of a single character. This is helpful when we need to find the numeric code corresponding to a character, often used in encoding and decoding text.
+
+Syntax:
+*/
+SELECT ascii('t');
+-- Output: 116
+
