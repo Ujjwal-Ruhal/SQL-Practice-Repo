@@ -57,3 +57,12 @@ Query:
 SELECT REPLACE('Hello World', 'World', 'SQL') AS UpdatedString;
 -- Output: Hello SQL
 
+/*
+SUBSTRING() / SUBSTR()
+The SUBSTRING() (or SUBSTR()) function is used to extract a substring from a string, starting from a specified position. It is especially useful when we need to extract a specific part of a string, like extracting the domain from an email address.
+
+Query:
+*/
+SELECT SUBSTRING('Hello World', 1, 5) AS SubStringExample;
+-- Output: Hello
+
