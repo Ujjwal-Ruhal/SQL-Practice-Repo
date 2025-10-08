@@ -7,3 +7,13 @@ SQL String Functions are powerful tools that allow us to manipulate, format, and
 Common SQL String Functions
 String functions are used to perform an operation on input string and return an output string. Below are some of the most commonly used SQL string functions:
 */
+
+/*
+1. CONCAT()
+The CONCAT() function is used to concatenate (combine) two or more strings into one string. It is useful when we want to merge fields like first and last names into a full name.
+
+Query:
+*/
+SELECT CONCAT('John', ' ', 'Doe') AS FullName;
+-- Output: John Doe
+
