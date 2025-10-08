@@ -129,3 +129,12 @@ Syntax:
 SELECT CONCAT_WS('_', 'hello', 'ujjwal', 'hi');
 -- Output: hello_ujjwal_hi
 
+/*
+FIND_IN_SET()
+The FIND_IN_SET() function returns the position of a value within a comma-separated list. This is especially useful for finding out where an element exists in a string of values (e.g., tags, categories).
+
+Syntax:
+*/
+SELECT FIND_IN_SET('b', 'a, b, c, d, e, f');
+-- Output: 2
+
