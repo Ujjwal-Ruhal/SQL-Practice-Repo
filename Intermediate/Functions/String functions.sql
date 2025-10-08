@@ -188,3 +188,12 @@ Syntax:
 SELECT Mid ("helloforujjjwal", 6, 2);
 -- Output: for
 
+/*
+POSITION()
+The POSITION() function finds the position of the first occurrence of a specified character in a string.
+
+Syntax:
+*/
+SELECT POSITION('e' IN 'helloforujjjwal');
+-- Output: 2
+
