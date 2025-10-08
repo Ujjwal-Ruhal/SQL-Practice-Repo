@@ -233,3 +233,14 @@ Syntax:
 SELECT SPACE(7);
 -- Output: ‘       ‘
 
+/*
+STRCMP()
+STRCMP() compares two strings and returns an integer value based on their lexicographical comparison. This is useful for sorting or checking equality between two strings. STRCMP(string1, string2) returns:
+
+0 if both strings are equal.
+A negative value if string1 is less than string2.
+A positive value if string1 is greater than string2.
+Syntax
+*/
+SELECT STRCMP('google.com', 'Youtube.com');
+-- Output: 1
