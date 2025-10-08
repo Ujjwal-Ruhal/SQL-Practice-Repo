@@ -206,3 +206,12 @@ Syntax:
 SELECT REPEAT('ILoveYou', 3);
 Output: ILoveYouILoveYouILoveYou
 
+/*
+RPAD()
+RPAD() pads the right side of a string with specified characters to a fixed length. This is often used to format text or numbers to a desired size.
+
+Syntax:
+*/
+RPAD('hello', 8, '0');
+-- Output: ‘hello000’
+
