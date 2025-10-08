@@ -106,3 +106,8 @@ Query:
 SELECT REVERSE('Hello') AS ReversedString;
 -- Output: olleH
 
+/*
+Other String Functions
+In SQL, beyond the basic string functions, there are several advanced string functions that can help you manipulate and process string data more effectively. These are the some additional SQL Functions.
+*/
+
