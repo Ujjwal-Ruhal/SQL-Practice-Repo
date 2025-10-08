@@ -147,3 +147,12 @@ Syntax:
 SELECT FORMAT(0.981 * 100, 'N2') + '%' AS PercentageOutput;
 -- Output: ‘98.10%’
 
+/*
+INSTR()
+The INSTR() function returns the position of the first occurrence of a substring within a string. If the substring is not found, it returns 0. It is useful for finding where specific text appears in a larger string.
+
+Syntax:
+*/
+SELECT INSTR('hello for ujjwal', 'e');
+-- Output: 2 
+
