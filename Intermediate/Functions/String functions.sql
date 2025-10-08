@@ -39,3 +39,12 @@ HELLO
 hello
 */
 
+/*
+LENGTH()
+LENGTH() returns the length of a string in bytes. This can be useful for working with multi-byte character sets.
+
+Query:
+*/
+SELECT LENGTH('Hello') AS LengthInBytes;
+-- Output: 5
+
