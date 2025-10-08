@@ -66,3 +66,16 @@ Query:
 SELECT SUBSTRING('Hello World', 1, 5) AS SubStringExample;
 -- Output: Hello
 
+/*
+LEFT() and RIGHT()
+The LEFT() and RIGHT() functions allow you to extract a specified number of characters from the left or right side of a string, respectively. It is used for truncating strings for display.
+
+Query:
+*/
+SELECT LEFT('Hello World', 5) AS LeftString;
+SELECT RIGHT('Hello World', 5) AS RightString;
+-- Output:
+
+-- Hello    
+-- World
+
