@@ -179,3 +179,12 @@ Syntax:
 SELECT LPAD('hello', 8, '0');
 -- Output: 000hello
 
+/*
+MID()
+MID() extracts a substring starting from a given position in a string and for a specified length. It is useful when you want to extract a specific portion of a string.
+
+Syntax:
+*/
+SELECT Mid ("helloforujjjwal", 6, 2);
+-- Output: for
+
