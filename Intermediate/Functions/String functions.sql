@@ -197,3 +197,12 @@ Syntax:
 SELECT POSITION('e' IN 'helloforujjjwal');
 -- Output: 2
 
+/*
+REPEAT()
+The REPEAT() function repeats a string a specified number of times. It's useful when you need to duplicate a string or pattern for certain operations.
+
+Syntax:
+
+SELECT REPEAT('ILoveYou', 3);
+Output: ILoveYouILoveYouILoveYou
+
