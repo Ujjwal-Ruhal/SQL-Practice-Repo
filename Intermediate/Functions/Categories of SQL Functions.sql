@@ -52,3 +52,29 @@ FROM (
     FROM employees
     GROUP BY department_id
 ) dept_max_salaries;
+
+/*
+In this example:
+
+Inner query: Gets the MAX(salary) for each department_id
+Outer query: Takes the AVG() of those max salaries
+Note: Most frequently used Aggregate functions are AVG, COUNT, DENSE_RANK, MAX, MIN, RANK, SUM.
+*/
+
+/*
+3. Analytic Function
+Analytic functions perform calculations over a window of rows and return a value for each row (unlike aggregate functions, which return one row per group). They are evaluated after all other clauses except the final ORDER BY.
+
+Now let's understand this with the help of example:
+
+*/
+
+SELECT
+  employee_id,
+  department_id,
+  salary,
+  AVG(salary) OVER (PARTITION BY department_id) AS avg_dept_salary
+FROM
+  employees;
+  
+  
