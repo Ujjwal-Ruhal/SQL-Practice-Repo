@@ -156,3 +156,7 @@ Syntax:
 SELECT INSTR('hello for ujjwal', 'e');
 -- Output: 2 
 
+/*
+LCASE()
+The LCASE() function converts all characters in a string to lowercase. It helps standardize text data, especially when comparing strings in a case-insensitive way.
+*/
