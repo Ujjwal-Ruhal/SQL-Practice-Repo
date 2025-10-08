@@ -144,3 +144,16 @@ Now let's understand this with the help of an example:
 
 SELECT UPPER('geeksforgeeks') AS result FROM dual;
 
+/*
+In this example:
+
+The UPPER() scalar function converts the input string to uppercase.
+It processes a single value and returns a single result.
+Note: Commonly used scalar functions in SQL include:
+
+UCASE(): Converts text to uppercase.
+LCASE(): Converts text to lowercase.
+LEN(): Returns the length of a text field.
+ROUND(): Rounds a number to a specified decimal place.
+NOW(): Returns the current system date and time.
+*/
