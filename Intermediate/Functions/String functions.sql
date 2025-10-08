@@ -88,3 +88,21 @@ Query:
 SELECT INSTR('Hello World', 'World') AS SubstringPosition;
 -- Output: 7
 
+/*
+TRIM()
+The TRIM() function removes leading and trailing spaces (or other specified characters) from a string. By default, it trims spaces but can also remove specific characters using TRIM(character FROM string). This is helpful for cleaning text data, such as user inputs or database records.
+
+Query:
+*/
+SELECT TRIM(' ' FROM '  Hello World  ') AS TrimmedString;
+-- Output: Hello World
+
+/*
+REVERSE()
+The REVERSE() function reverses the characters in a string. It’s useful in situations where we need to process data backward, such as for password validation or certain pattern matching.
+
+Query:
+*/
+SELECT REVERSE('Hello') AS ReversedString;
+-- Output: olleH
+
