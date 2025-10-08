@@ -103,4 +103,44 @@ MODEL
     sales['Apr'] = NVL(sales['Apr'], sales['Mar'] * 1.10)
   );
   
+  /*
+  In this example:
+
+The query forecasts sales for March and April using previous month values.
+NVL() ensures only missing values are calculated.
+The MODEL clause performs cell-based calculations, similar to Excel.
+Functions like CV(), Previous, and Iteration_Number help in dynamic and iterative rule definitions.
+Note: Key Model Functions includes CV() ,Iteration_Number , PresentV,  PresentNNV, Previous.
+*/
+
+/*
+5. User Defined Function
+User Defined Functions (UDFs) are custom functions created using PL/SQL or Java to extend SQL's capabilities. They provide functionality not available through built-in SQL functions and can be used anywhere an expression is allowed. 
+
+Now let's understand this with the help of an example:
+*/
+
+SELECT
+  employee_id,
+  salary,
+  get_annual_salary(salary) AS annual_salary
+FROM
+  employees;
   
+  /*
+  In this example:
+
+The user-defined function get_annual_salary multiplies the monthly salary by 12.
+It's used in the SELECT list just like a built-in SQL function.
+Note: User Defined Functions can be used in SELECT list, WHERE, ORDER BY,  GROUP BY, CONNECT BY, START WITH clauses, VALUES clause of INSERT, SET clause of UPDATE.
+*/
+
+/*
+6. Scalar Function
+Scalar functions return a single value based on the input. They operate on individual data items and can be used wherever expressions are allowed in SQL queries.
+
+Now let's understand this with the help of an example:
+*/
+
+SELECT UPPER('geeksforgeeks') AS result FROM dual;
+
