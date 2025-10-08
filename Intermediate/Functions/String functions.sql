@@ -48,3 +48,12 @@ Query:
 SELECT LENGTH('Hello') AS LengthInBytes;
 -- Output: 5
 
+/*
+REPLACE()
+The REPLACE() function replaces occurrences of a substring within a string with another substring. This is useful for cleaning up data, such as replacing invalid characters or formatting errors.
+
+Query:
+*/
+SELECT REPLACE('Hello World', 'World', 'SQL') AS UpdatedString;
+-- Output: Hello SQL
+
