@@ -133,3 +133,14 @@ Example:
 SELECT LOG(100);
 -- Output: 4.605170186
 
+/*
+RAND() – Random Number
+The RAND() function generates a random floating-point number between 0 and 1. This function is commonly used for simulations, lotteries, or generating random samples.
+
+Syntax:
+
+SELECT RAND();
+Example:
+*/
+SELECT RAND();
+-- Output: 0.287372
