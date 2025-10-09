@@ -120,3 +120,16 @@ Example:
 SELECT EXP(1);
 -- Output: 2.718281828459045
 
+/*
+LOG() – Logarithm
+The LOG() function returns the natural logarithm (base e) of a number. You can also use LOG(base, number) to calculate the logarithm of a number with a custom base.
+
+Syntax:
+
+SELECT LOG(number);
+SELECT LOG(base, number);
+Example:
+*/
+SELECT LOG(100);
+-- Output: 4.605170186
+
