@@ -84,3 +84,15 @@ Example:
 SELECT MOD(10, 3);
 -- Output: 1
 
+/*
+POWER() – Raise a Number to the Power of Another
+The POWER() function is used to raise a number to the power of another number. It is often used in mathematical calculations like compound interest or growth rate.
+
+Syntax:
+
+SELECT POWER(base, exponent);
+Example:
+*/
+SELECT POWER(2, 3);
+-- Output: 8
+
