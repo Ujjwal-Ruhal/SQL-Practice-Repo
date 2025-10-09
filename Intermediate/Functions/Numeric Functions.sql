@@ -24,3 +24,15 @@ Example:
 SELECT ABS(-25);
 -- Output: 25
 
+/*
+CEIL() or CEILING() – Round Number Up
+The CEIL() (or CEILING()) function rounds a number up to the nearest integer, regardless of whether the decimal part is greater than or less than 0.5.
+
+Syntax:
+
+SELECT CEIL(number);
+Example:
+*/
+SELECT CEIL(12.34);
+-- Output: 13
+
