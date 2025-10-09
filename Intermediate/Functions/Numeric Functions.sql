@@ -108,3 +108,15 @@ Example:
 SELECT SQRT(16);
 -- Output: 4
 
+/*
+EXP() – Exponential Function
+The EXP() function returns the value of e raised to the power of a specified number, where e is the base of the natural logarithm (approximately 2.71828).
+
+Syntax:
+
+SELECT EXP(number);
+Example:
+*/
+SELECT EXP(1);
+-- Output: 2.718281828459045
+
