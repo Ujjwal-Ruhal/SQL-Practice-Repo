@@ -60,3 +60,15 @@ Example:
 SELECT ROUND(15.6789, 2);
 -- Output: 15.68
 
+/*
+TRUNCATE() – Remove Decimal Places
+The TRUNCATE() function is used to remove the decimal portion of a number without rounding. It truncates the number to the specified number of decimal places.
+
+Syntax:
+
+SELECT TRUNCATE(number, decimal_places);
+Example:
+*/
+SELECT TRUNCATE(12.98765, 2);
+-- Output: 12.98
+
