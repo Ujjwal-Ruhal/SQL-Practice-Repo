@@ -47,3 +47,16 @@ Example:
 */
 SELECT FLOOR(12.98);
 -- Output: 12
+
+/*
+ROUND() – Round a Number to a Specified Decimal Place
+The ROUND() function rounds a number to a specified number of decimal places. It is very useful for financial calculations or whenever precise rounding is necessary.
+
+Syntax:
+
+SELECT ROUND(number, decimal_places);
+Example:
+*/
+SELECT ROUND(15.6789, 2);
+-- Output: 15.68
+
