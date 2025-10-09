@@ -72,3 +72,15 @@ Example:
 SELECT TRUNCATE(12.98765, 2);
 -- Output: 12.98
 
+/*
+MOD() – Modulo or Remainder
+The MOD() function returns the remainder of a division operation (i.e., it computes the modulus). This function is useful for tasks like determining even/odd numbers or finding remainders in mathematical operations.
+
+Syntax:
+
+SELECT MOD(dividend, divisor);
+Example:
+*/
+SELECT MOD(10, 3);
+-- Output: 1
+
