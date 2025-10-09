@@ -8,3 +8,19 @@ Round numbers to desired precision.
 Format numeric values for better readability.
 Aggregate and analyze numeric data efficiently.
 */
+/*
+Commonly Used SQL Numeric Functions
+Following are the numeric functions defined in SQL
+*/
+/*
+ABS() – Absolute Value
+The ABS() function returns the absolute value of a number, which is the number without its sign (i.e., it converts negative numbers to positive).
+
+Syntax:
+
+SELECT ABS(number);
+Example:
+*/
+SELECT ABS(-25);
+-- Output: 25
+
