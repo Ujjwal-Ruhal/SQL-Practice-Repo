@@ -96,3 +96,15 @@ Example:
 SELECT POWER(2, 3);
 -- Output: 8
 
+/*
+SQRT() – Square Root
+The SQRT() function returns the square root of a number. This is useful for mathematical calculations involving geometry or statistical analysis.
+
+Syntax:
+
+SELECT SQRT(number);
+Example:
+*/
+SELECT SQRT(16);
+-- Output: 4
+
